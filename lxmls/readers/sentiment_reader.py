@@ -135,7 +135,8 @@ def build_dicts(domain):
                 # print "adding %s with counts %s"%(name,counts)
                 X[nr_pos+nr_neg, feat_dict[name]] = int(counts)
         nr_neg += 1
-    # print X.shape
+
+    print X.shape
     # print np.sum(X)
     X_aux = X.copy()
     y_aux = y.copy()
